@@ -7,11 +7,11 @@
 </head>
 
 <body>
-    <header class="fila-1">
+    <header class="fila-1" column="80%,*">
         <div class="col-10" style="background-color: #b4e3cc;">COL 10</div>
         <div class="col-2" style="background-color: #ff5733;">COL 2</div>
     </header>
-    <div class="fila-2">
+    <div class="fila-2" column="33.3%,33.3%,*">
         <div class="col-4-1" style="background-color: #decd3e;">COL 4</div>
         <div class="col-4-2" style="background-color: #a4e57c;">COL 4</div>
         <div class="col-4-3" style="background-color: #dfc80c;">COL 4</div>
@@ -22,16 +22,14 @@
     <style>
         *{
             margin: 0;
-            
+
         }
         .fila-1{
             display: grid;
-            grid-template-columns: 80%,20%;
             grid-template-areas: "col-10 col-2";
         }
 
         .fila-2{
-            grid-template-columns: 33.3%,33.3%,33.3% ;
             display: grid;
             grid-template-areas: "col-4-1 col-4-2 colo-4-3";
         }
